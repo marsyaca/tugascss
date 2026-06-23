@@ -1,0 +1,106 @@
+#dolphin1{
+    width: 250px;
+    border-radius: 15px;
+  }
+
+#dolphin2{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+#dolphin3{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    border-radius: center;
+  }
+
+.search-rounded {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 6px 12px;
+    outline: none;
+  }
+
+.search-shadow {
+    border: none;
+    border-radius: 20px;
+    padding: 15px 16px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    font-size: 14px;
+    outline: none;
+  }
+
+.linkedin-box { 
+    width: 300px; 
+    font-family: Arial; 
+  }
+  
+.lebel { 
+   color: gray; 
+   font-size: 12px; 
+   margin-bottom: 4px; 
+  }
+
+.in-text {
+   width: 100%; 
+   border: 1px solid gray; 
+   padding: 6px; 
+   margin-bottom: 8px; 
+  }
+
+.policy {
+   color: gray;
+    font-size: 11px; 
+  }
+
+.join-button { 
+    width: 100%; 
+    background-color: #0a66c2; 
+    color: white;
+    border: none; 
+    padding: 10px;
+    border-radius: 20px; 
+    font-weight: bold;
+    cursor: pointer; 
+  }
+
+.tweet-box { 
+   border: 1px solid #ddd; 
+   padding: 10px;
+   width: 450px; 
+   font-family: Arial;
+   box-shadow: 0 1px 4px rgba(0,0,0,0.1); 
+  }
+
+.tweet-avatar { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    vertical-align: middle; 
+  }
+  
+.tweet-input { 
+    width: 280px;
+    border: none; 
+    outline: none; 
+    margin-left: 10px; 
+    font-size: 16px; 
+    vertical-align: middle; 
+  }
+.tweet-button { 
+    background-color: #1d9bf0; 
+    color: white; 
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    vertical-align: middle; 
+    float: right; 
+    margin-top: 4px; 
+  }

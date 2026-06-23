@@ -1,0 +1,19 @@
+  .body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .tesla-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .tesla-sub {
+    font-size: 14px;
+    color: #393c41;
+    margin-top: 0;
+  }
+  .underline {
+    text-decoration: underline;
+    cursor: pointer;
+  }

@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsya lesson 12</title>
+</head>
+<body>
+  <h3>Soal 12a</h3>
+  <div class="flex-12a">
+  <div class="box-blue">
+    200px
+  </div>
+  <div class="box-pink">
+    75px
+  </div>
+</div>
+
+  <h3>Soal 12b</h3>
+  <div class="flex-12b">
+  <div class="item-blue">
+    item1
+  </div>
+  <div class="item-pink">
+    item2
+  </div>
+  <div class="item-blue">
+    item3
+  </div>
+</div>
+
+  <h3>Soal 12c</h3>
+  <div class="flex-12c">
+  <div>item1</div>
+  <div>item2</div>
+  <div>item3</div>
+  <div>item4</div>
+</div>
+
+  <h3>Soal 12d</h3>
+  <div class="flex-12d">
+  <div>item1</div>
+  <div>item2</div>
+  </div>
+
+  <h3>Soal 12e</h3>
+  <div class="menu-box">
+  <div class="menu-item">
+    <span>Home</span>
+    <span class="badge blue">14</span>
+  </div>
+  <div class="menu-item">
+    <span>Notifications</span>
+    <span class="badge blue">3</span>
+  </div>
+  <div class="menu-item">
+    <span>Messages</span>
+    <span class="badge blue">5</span>
+  </div>
+</div>
+
+  <h3>Soal 12f</h3>
+  <div class="nav-bar">
+  <div class="nav-left">
+    Home
+  </div>
+  <input class="nav-search" type="text" placeholder="Search">
+  <button class="nav-button">
+    Download
+  </button>
+</div>
+
+  <h3>Soal 12g</h3>
+  <div class="list-wrapper-10b">
+
+  <div class="profile-item-10b">
+    <img class="avatar-img" src="dolphin.webp" alt="Dolph">
+    <div class="profile-content">
+      <div class="profile-info">
+        <p class="txt-name">
+          dolph
+        </p>
+        <p class="txt-desc">
+          the cat
+        </p>
+        <p class="txt-status">
+          Popular
+        </p>
+      </div>
+      <button class="button-follow">
+        Follow
+      </button>
+    </div>
+  </div>
+
+  <div class="profile-item-10b">
+    <img class="avatar-img" src="jellyfish.webp" alt="Lily">
+    <div class="profile-content">
+      <div class="profile-info">
+        <p class="txt-name">
+          Lily
+        </p>
+        <p class="txt-desc">
+          Sleepy Cat
+        </p>
+        <p class="txt-status">
+          Popular
+        </p>
+      </div>
+      <button class="button-follow">
+        Follow
+      </button>
+    </div>
+  </div>
+
+  <div class="profile-item-10b">
+    <img class="avatar-img" src="starfish.jpeg" alt="Tatar">
+    <div class="profile-content">
+      <div class="profile-info">
+        <p class="txt-name">
+          Tatar
+        </p>
+        <p class="txt-desc">
+          Happy Bulldog
+        </p>
+        <p class="txt-status">
+          Popular
+        </p>
+      </div>
+      <button class="button-follow">
+        Follow
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<style>
+  .list-wrapper-10b {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    width: 400px;
+    font-family: Arial, sans-serif;
+  }
+  .profile-item-10b {
+    display: flex;
+    align-items: center;
+  }
+  .avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+  }
+  .profile-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .profile-info p {
+    margin: 0;
+  }
+  .txt-name {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .txt-desc, .txt-status {
+    color: gray;
+    font-size: 13px;
+  }
+  .button-follow {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .button-follow:hover {
+    background-color: #145dbf;
+  }
+</style>
+</body>
+</html>
+
+
+<style>
+  .flex-12a {
+    display: flex;
+  }
+  .box-blue { 
+    width: 200px; 
+    background-color: lightblue; 
+    padding: 10px; 
+  }
+  .box-pink { 
+    width: 75px; 
+    background-color: pink; 
+    padding: 10px; 
+  }
+
+  .flex-12b {
+    display: flex;
+  }
+  .item-blue { 
+    width: 50px; 
+    background-color: lightblue; 
+    padding: 10px; 
+  }
+  .item-pink { 
+    flex: 1; 
+    background-color: pink; 
+    padding: 10px; 
+  }
+  .flex-12b div:last-child {
+    width: 75px; 
+    }
+
+  .flex-12c {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-12c div { 
+    background-color: pink; 
+    padding: 10px; 
+    }
+  
+.flex-12d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 1px solid gray;
+    padding: 0 10px;
+  }
+  .flex-12d div { 
+    background-color: pink; 
+    padding: 5px; 
+  }
+  
+  .menu-box { 
+    width: 250px; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    font-family: Arial; 
+    border-radius: 6px;
+  }
+  .menu-item { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 12px; 
+    border-bottom: 1px solid #eee; 
+  }
+  .menu-item:last-child { 
+    border-bottom: none; 
+  }
+  .badge { 
+    background-color: #1877f2; 
+    color: white; 
+    padding: 3px 8px; 
+    border-radius: 12px; 
+    font-size: 12px; 
+    font-weight: bold;
+  }
+
+  .nav-bar { 
+    display: flex; 
+    align-items: center; 
+    background-color: purple; 
+    color: white; 
+    padding: 10px 16px; 
+    font-family: Arial; 
+  }
+  .nav-left { 
+    font-weight: bold; 
+    margin-right: 20px; 
+  }
+  .nav-search { 
+    flex: 1; 
+    max-width: 500px; 
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    margin-right: 20px; 
+    outline: none;
+  }
+  .nav-button { 
+    background: transparent; 
+    border: 1px solid white; 
+    color: white; 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    cursor: pointer;
+  }
+</style>
