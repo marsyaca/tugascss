@@ -1,0 +1,357 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsya lesson 13</title>
+</head>
+<body>
+
+  <h3>Soal 13a</h3>
+   <div class="container-13a">
+   <div class="left">
+   <div class="inner">item1</div>
+   </div>
+   <div class="right"></div>
+ </div>
+
+  <h3>Soal 13b</h3>
+   <div class="container-13b">
+   <div class="left"></div>
+
+   <div class="right">
+   <div class="row1">row1</div>
+
+   <div class="row2">
+   <span class="box">row2</span>
+   <span class="box">row2</span>
+    </div>
+  </div>
+</div>
+
+
+
+  <h3>Soal 13c</h3>
+    <div class="inbox">
+
+      <div class="label">ALL INBOXES</div>
+
+    <div class="email">
+     <img src="dolphin.webp" class="avatar">
+
+     <div class="content">
+      <div class="header">
+       <span class="sender">Chewy Promotions</span>
+       <span class="time">4:58 PM</span>
+    </div>
+
+    <div class="title">Biggest sales of the year!</div>
+
+    <div class="message">
+      Hey there! We're writing to tell you about our...
+    </div>
+  </div>
+</div>
+
+    <h3>Soal 13d&e</h3>
+
+  <div class="title">ALL INBOXES</div>
+
+  <div class="email">
+    <div class="profile">
+      <img src="dolphin.webp">
+    </div>
+
+    <div class="info">
+      <div class="row">
+        <div>Chewy Promotions</div>
+        <div class="time">4:58 PM</div>
+      </div>
+
+      <div class="subject">
+        Biggest sales of the year!
+      </div>
+
+      <div class="message">
+        Hey there! We're writing to tell you about our...
+      </div>
+    </div>
+  </div>
+
+  <div class="email">
+    <div class="profile">
+    <img src="jellyfish.webp">
+  </div>
+
+  <div class="info">
+      <div class="row">
+        <div>Best Buy</div>
+        <div class="time">12:32 PM</div>
+      </div>
+
+      <div class="subject">
+        Your Best Buy eReceipt
+      </div>
+
+      <div class="message">
+        Thank you for shopping at Best Buy, here is...
+      </div>
+    </div>
+  </div>
+
+  <div class="email">
+    <div class="profile">
+    <img src="starfish.jpeg">
+  </div>
+
+  <div class="info">
+      <div class="row">
+        <div>Netflix</div>
+        <div class="time">9:00 AM</div>
+      </div>
+
+      <div class="subject">
+        Here's what's coming soon to Netflix
+      </div>
+
+      <div class="message">
+        Brand new movies and shows, old favorites...
+      </div>
+    </div>
+  </div>
+
+      <h3>Soal 13f&g</h3>
+    <div class="tweet">
+
+        <img class="profile-picture" src="jellyfish.webp">
+
+        <div class="tweet-info">
+
+            <div class="header">
+                <span class="name">supersimple.dev</span>
+                <span class="username">@SuperSimpleDev</span>
+            </div>
+
+            <div class="tweet-text">
+                What is backend web development? A complete overview. New video is up!
+            </div>
+
+            <div class="video-preview">
+
+                <div class="thumbnail"></div>
+
+                <div class="video-info">
+                    <div class="website">youtube.com</div>
+
+                    <div class="video-title">
+                        Backend web development - a complete overview (2021)
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<style>
+
+  .container-13a {
+  display: flex;
+}
+.left {
+  width: 100px;
+  background-color: lightpink;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner {
+  background-color: black;
+  color: white;
+}
+.right {
+  width: 200px;
+  background-color: lightblue;
+}
+
+
+.container-13b {
+  display: flex;
+}
+.left {
+  width: 100px;
+  background-color: lightpink;
+}
+.right {
+  width: 200px;
+  background-color: lightblue;
+  padding: 5px;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  background-color: black;
+  color: white;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.email {
+  display: flex;
+  width: 420px;
+  gap: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.label {
+  font-size: 12px;
+  color: gray;
+  margin: 10px 0;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.content {
+  flex: 1;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.sender {
+  font-weight: bold;
+  font-size: 14px;
+}
+.time {
+  font-size: 12px;
+  color: gray;
+}
+.title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.message {
+  font-size: 13px;
+  color: gray;
+}
+
+    body{
+      font-family: Arial;
+    }
+    .title{
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .email{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .profile img{
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+    }
+    .info{
+      flex: 1;
+      margin-left: 10px;
+    }
+    .row{
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+    .time{
+      color: gray;
+      font-size: 14px;
+    }
+    .subject{
+      font-weight: bold;
+      margin-top: 3px;
+    }
+    .message{
+      color: gray;
+      margin-top: 3px;
+    }
+
+
+    body{
+    font-family: Arial;
+}
+
+.tweet{
+    display: flex;
+    width: 420px;
+}
+
+.profile-picture{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.tweet-info{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.header{
+    margin-bottom: 5px;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.username{
+    color: gray;
+}
+
+.tweet-text{
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.video-preview{
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.thumbnail{
+    width: 100px;
+    background-color: lightgray;
+}
+
+.video-info{
+    padding: 15px;
+    flex: 1;
+}
+
+.website{
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.video-title{
+    line-height: 20px;
+}
+  </style>
+</head>

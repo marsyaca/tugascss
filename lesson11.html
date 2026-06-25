@@ -1,0 +1,264 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsya lesson 11</title>
+</head>
+<body>
+
+  <h3>Soal 11a</h3>
+  <div class="grid">
+  <div class="col-blue">200px</div>
+  <div class="col-pink">75px</div>
+</div>
+
+  <h3>Soal 11b</h3>
+
+  <div class="grid-1">
+  <div class="col-blue">
+    col1
+  </div>
+  <div class="col-pink">
+    col2
+  </div>
+  <div class="col-blue">
+    col3
+  </div>
+</div>
+
+  <h3>Soal 11c</h3>
+  <div class="grid-11c">
+  <div>col1</div>
+  <div>col2</div>
+  <div>col3</div>
+  <div>col4</div>
+  <div>col1</div>
+  <div>col2</div>
+  <div>col3</div>
+  <div>col4</div>
+</div>
+
+  <h3>Soal 11d</h3>
+ <div class="grid">
+
+  <div class="card">
+    <img src="dolphin.webp" class="main-img">
+
+    <p class="name">Oliver</p>
+
+    <div class="mutual-row">
+      <img src="starfish.jpeg" class="small-img">
+      <p class="mutual">2 mutual friends</p>
+    </div>
+
+    <button class="btn">Add Friend</button>
+  </div>
+
+  <div class="card">
+    <img src="jellyfish.webp" class="main-img">
+
+    <p class="name">Mimi</p>
+
+    <div class="mutual-row">
+      <img src="dolphin.webp" class="small-img">
+      <p class="mutual">3 mutual friends</p>
+    </div>
+
+    <button class="btn">Add Friend</button>
+  </div>
+
+  <div class="card">
+    <img src="starfish.jpeg" class="main-img">
+
+    <p class="name">Rex</p>
+
+    <div class="mutual-row">
+      <img src="jellyfish.webp" class="small-img">
+      <p class="mutual">4 mutual friends</p>
+    </div>
+
+    <button class="btn">Add Friend</button>
+  </div>
+
+</div>
+
+</div>
+  
+</body>
+</html>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: 200px 75px;
+  }
+  .col-blue { 
+    background-color: lightblue; 
+    padding: 10px; 
+  }
+  .col-pink { 
+    background-color: pink; 
+    padding: 10px; 
+    }
+
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 50px 1fr 75px; 
+  }
+  
+  .col-blue { 
+    background-color: lightblue; 
+    padding: 10px; 
+  }
+  
+  .col-pink { 
+    background-color: pink; 
+    padding: 10px; 
+  }
+
+.grid-11c {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+  .grid-11c div {
+    background-color: pink;
+    padding: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .cards {
+  display: flex;
+  gap: 20px;
+}
+
+.grid-container-11d {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px; 
+    width: 500px; 
+    font-family: Arial, sans-serif;
+  }
+  .card-item-11d {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .avatar-blue-box {
+    border: 3px solid blue;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+  }
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .content-blue-box {
+    border: 3px solid blue;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+  .text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+  .border-red {
+    margin: 0;
+    border: 2px solid red;
+    padding: 2px 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .txt-name {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .txt-sub, .txt-status {
+    color: gray;
+    font-size: 12px;
+  }
+  .button-follow {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    width: 100%;
+  }
+
+.body {
+  font-family: Arial;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 15px;
+}
+.card {
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 6px;
+  overflow: hidden; 
+}
+.main-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.name {
+  font-weight: bold;
+  margin: 10px;
+}
+.mutual-row {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 10px 10px;
+}
+.small-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.mutual {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+.btn {
+  margin: 0 10px 10px 10px;
+
+  background-color: rgb(24,119,242);
+  color: white;
+  border: none;
+  border-radius: 6px;
+
+  padding: 8px 12px;
+  font-weight: bold;
+}
+</style>
+</style>

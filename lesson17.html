@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsya lesson 17</title>
+</head>
+<body>
+  <h3>Soal 17a</h3>
+  <div class="video-grid">
+  <div class="video-card">
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="googleceo.jpeg" alt="Thumbnail 1">
+    </div>
+    <div class="video-info-grid">
+      <img class="profile-picture" src="marques.jpeg" alt="Avatar 1">
+      <div class="video-info">
+        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+        <p class="video-author">Marques Brownlee</p>
+        <p class="video-stats">3.4M views &bull; 6 months ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="not laugh.jpeg" alt="Thumbnail 2">
+    </div>
+    <div class="video-info-grid">
+      <img class="profile-picture" src="markiplier.webp" alt="Avatar 2">
+      <div class="video-info">
+        <p class="video-title">Try Not To Laugh Challenge #9</p>
+        <p class="video-author">Markiplier</p>
+        <p class="video-stats">19M views &bull; 4 years ago</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="yt swlf.jpeg" alt="Thumbnail 3">
+    </div>
+    <div class="video-info-grid">
+      <img class="profile-picture" src="sssniperwolf.webp" alt="Avatar 3">
+      <div class="video-info">
+        <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
+        <p class="video-author">SSSniperWolf</p>
+        <p class="video-stats">12M views &bull; 1 year ago</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<style>
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 40px;
+}
+.thumbnail-container {
+  width: 100%;
+}
+.thumbnail {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 12px;
+  margin-top: 12px;
+}
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0f0f0f;
+  margin: 0 0 6px 0;
+}
+.video-author, 
+.video-stats {
+  font-size: 12px;
+  color: #606060;
+  margin: 0;
+  margin-top: 4px;
+}
+
+@media (min-width: 1000.1px) {
+  
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .video-author,
+  .video-stats {
+    font-size: 14px;
+  }
+  
+}
+</style>

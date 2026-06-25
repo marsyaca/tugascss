@@ -1,0 +1,329 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsya lesson 16</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>Soal 16a&b&c</h3>
+  <header class="header">
+    <div class="search-bar-container">
+      <input class="search-bar" type="text" placeholder="Search">
+    </div>
+    <div class="header-icons">
+      <button class="icon-btn" title="Create">Create</button>
+      <button class="icon-btn" title="YouTube apps">YouTube Apps</button>
+      <button class="icon-btn" title="Notifications">Notifications</button>
+    </div>
+  </header>
+
+  <div class="video-grid">
+    <div class="video-card">
+      
+      <div class="thumbnail-container">
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+          <img class="thumbnail" src="googleceo.jpeg" alt="Thumbnail">
+        </a>
+        <div class="video-time">14:20</div>
+      </div>
+      
+      <div class="video-info-grid">
+        <div class="channel-picture-container">
+          <a href="https://www.youtube.com/@mkbhd" target="_blank">
+            <img class="profile-picture" src="marques.jpeg" alt="MKBHD">
+          </a>
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </a>
+          </p>
+          <p class="video-author">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &bull; 6 months ago</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <h3>Soal 16d</h3>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="thumbnail-container">
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+          <img class="thumbnail" src="googleceo.jpeg" alt="Thumbnail">
+        </a>
+        <div class="video-time">14:20</div>
+      </div>
+      
+      <div class="video-info-grid">
+        <div class="channel-picture-container">
+          <a href="https://www.youtube.com/@mkbhd" target="_blank">
+            <img class="profile-picture" src="marques.jpeg" alt="MKBHD">
+          </a>
+          <div class="channel-tooltip">
+            <img class="tooltip-profile-pic" src="marques.jpeg" alt="MKBHD Large">
+            <div class="tooltip-info">
+              <p class="tooltip-name">Marques Brownlee</p>
+              <p class="tooltip-subs">18M subscribers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </a>
+          </p>
+          <p class="video-author">Marques Brownlee</p>
+          <p class="video-stats">3.4M views &bull; 6 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="thumbnail-container">
+        <a href="https://youtu.be/FsdWNU--qsU?si=gn91X8K2xTmQMmGr" target="_blank">
+          <img class="thumbnail" src="not laugh.jpeg" alt="Thumbnail">
+        </a>
+        <div class="video-time">8:22</div>
+      </div>
+      
+      <div class="video-info-grid">
+        <div class="channel-picture-container">
+          <a href="https://www.youtube.com/@markiplier" target="_blank">
+            <img class="profile-picture" src="markiplier.webp" alt="Markiplier">
+          </a>
+          <div class="channel-tooltip">
+            <img class="tooltip-profile-pic" src="markiplier.webp" alt="Markiplier Large">
+            <div class="tooltip-info">
+              <p class="tooltip-name">Markiplier</p>
+              <p class="tooltip-subs">36M subscribers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+            <a href="https://www.youtube.com/watch?v=F384w84gE4c" target="_blank">
+              Try Not To Laugh Challenge #9
+            </a>
+          </p>
+          <p class="video-author">Markiplier</p>
+          <p class="video-stats">30M views &bull; 4 years ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<style>
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+}
+.search-bar {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+.search-button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 400px;
+}
+.thumbnail-container {
+  position: relative;
+  margin-bottom: 12px;
+}
+.thumbnail {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+.video-time {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 12px;
+}
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+}
+.video-title a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0f0f0f;
+  text-decoration: none; 
+  display: -webkit-box;
+  overflow: hidden;
+}
+.video-title a:hover {
+  color: #0056b3; 
+}
+.video-author, .video-stats {
+  font-size: 12px;
+  color: #606060;
+  margin: 4px 0 0 0;
+}
+
+
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  max-width: 700px;
+}
+.thumbnail-container {
+  position: relative;
+  margin-bottom: 12px;
+}
+.thumbnail {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+.video-time {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 12px;
+}
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.video-title a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  overflow: hidden;
+}
+.video-author, .video-stats {
+  font-size: 12px;
+  color: #606060;
+  margin: 0;
+  margin-top: 4px;
+}
+.channel-picture-container {
+  position: relative;
+  display: inline-block;
+}
+.channel-tooltip {
+  position: absolute;
+  bottom: -75px; 
+  left: 0;
+  background-color: white;
+  width: 200px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  transform: translateY(5px);
+  z-index: 10;
+}
+.channel-picture-container:hover .channel-tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.tooltip-profile-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.tooltip-info {
+  display: flex;
+  flex-direction: column;
+}
+.tooltip-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+}
+.tooltip-subs {
+  font-size: 12px;
+  color: #606060;
+  margin: 0;
+  margin-top: 2px;
+}
+</style>

@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marsya lesson 14</title>
+</head>
+<body>
+  <h3>Soal 14d</h3>
+  <div class="sidebar">
+    right sidebar
+  </div>
+
+  <div class="overlay">
+
+    <div class="modal">
+      <h2>Modal Title</h2>
+      <p>This is a modal</p>
+      <button>Close</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+  <style>
+    body{
+    font-family: Arial;
+    }
+    .sidebar{
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100px;
+
+      background-color: green;
+      color: white;
+    }
+    .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      background-color: rgba(0,0,0,0.8);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal{
+      background-color: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
